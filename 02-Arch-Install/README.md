@@ -490,6 +490,11 @@ Port-forward the Argo CD server:
 ```bash
 kubectl port-forward service/my-argo-cd-argocd-server -n argocd 8080:443
 ```
+or 
+
+```bash
+kubectl port-forward --address 0.0.0.0 service/my-argo-cd-argocd-server -n argocd 8080:443
+```
 
 **Explanation:**
 
