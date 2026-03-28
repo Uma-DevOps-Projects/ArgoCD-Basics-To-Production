@@ -1073,6 +1073,11 @@ Port-forward the frontend service:
 ```bash
 kubectl port-forward -n app1-ns svc/frontend-svc 8081:80
 ```
+or 
+
+```bash
+kubectl port-forward --address 0.0.0.0 -n app1-ns svc/app1-svc 8081:80
+```
 
 Open browser:
 
